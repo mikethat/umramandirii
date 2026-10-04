@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Umra Mandiri | Atur umrah sesuai rencanamu sendiri</title>
+  <meta name="description" content="Hitung biaya umrah mandiri: pilih hotel Makkah dan Madinah, lama menginap, dan layanan yang kamu butuhkan. Dibantu tim lewat WhatsApp.">
+  <meta name="theme-color" content="#0B6E7F">
+  <meta property="og:title" content="Umra Mandiri">
+  <meta property="og:description" content="Atur umrah sesuai rencanamu sendiri. Hitung biaya, pilih hotel, dan kirim rencanamu ke WhatsApp.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <a class="skip" href="#konten">Lewati ke konten</a>
+
+  <header class="top">
+    <div class="wrap top-row">
+      <a class="brand" href="#rencana" aria-label="Umra Mandiri, ke atas">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect width="32" height="32" rx="9" fill="#0B6E7F"/>
+          <path d="M8 25V15a8 8 0 0 1 16 0v10" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="16" cy="17" r="2.4" fill="#E2B04A"/>
+        </svg>
+        <span class="brand-name" data-brand>Umra Mandiri</span>
+      </a>
+      <nav class="nav" aria-label="Navigasi utama">
+        <a href="#rencana">Kalkulator</a>
+        <a href="#paket">Paket</a>
+        <a href="#hotel">Hotel</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn-small" data-wa-link href="#kontak">Chat WhatsApp</a>
+    </div>
+  </header>
+
+  <main id="konten">
+    <noscript><p class="notice">Website ini membutuhkan JavaScript untuk menampilkan paket dan kalkulator. Silakan aktifkan JavaScript atau hubungi kami lewat WhatsApp.</p></noscript>
+    <p class="notice" id="load-error" role="alert" hidden></p>
+
+    <!-- Hero + kalkulator -->
+    <section class="hero" id="rencana" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1 id="hero-title">Berangkat umrah dengan rencanamu sendiri</h1>
+          <p class="lead" id="hero-text"></p>
+          <ul class="ticks" id="hero-points"></ul>
+        </div>
+
+        <div class="calc" role="group" aria-labelledby="calc-title">
+          <h2 id="calc-title">Hitung rencana perjalananmu</h2>
+
+          <div class="field">
+            <span class="label" id="lbl-pax">Jumlah jamaah</span>
+            <div class="stepper" role="group" aria-labelledby="lbl-pax">
+              <button type="button" id="pax-minus" aria-label="Kurangi jamaah">−</button>
+              <output id="pax-value" aria-live="polite">2</output>
+              <button type="button" id="pax-plus" aria-label="Tambah jamaah">+</button>
+            </div>
+          </div>
+
+          <div class="row-2">
+            <div class="field">
+              <label class="label" for="nights-mk">Malam di Makkah</label>
+              <select id="nights-mk"></select>
+            </div>
+            <div class="field">
+              <label class="label" for="nights-md">Malam di Madinah</label>
+              <select id="nights-md"></select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="hotel-mk">Hotel di Makkah</label>
+            <select id="hotel-mk"></select>
+          </div>
+          <div class="field">
+            <label class="label" for="hotel-md">Hotel di Madinah</label>
+            <select id="hotel-md"></select>
+          </div>
+
+          <fieldset class="field services-field">
+            <legend class="label">Layanan yang diambil</legend>
+            <div id="calc-services"></div>
+          </fieldset>
+
+          <div class="result" aria-live="polite">
+            <p class="result-label">Estimasi total</p>
+            <p class="result-total" id="total">Rp 0</p>
+            <p class="result-per" id="per-person"></p>
+            <details class="breakdown">
+              <summary>Lihat rincian biaya</summary>
+              <ul id="breakdown-list"></ul>
+            </details>
+            <a class="btn btn-wide" id="send-wa" href="#kontak" target="_blank" rel="noopener">Kirim rencana ke WhatsApp</a>
+            <p class="fine">Estimasi saja. Harga final dikonfirmasi tim kami sebelum pembayaran.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cara kerja -->
+    <section class="section" id="cara-kerja" aria-labelledby="h-cara">
+      <div class="wrap">
+        <h2 id="h-cara">Dari rencana sampai berangkat</h2>
+        <ol class="steps" id="steps"></ol>
+      </div>
+    </section>
+
+    <!-- Paket -->
+    <section class="section tint" id="paket" aria-labelledby="h-paket">
+      <div class="wrap">
+        <h2 id="h-paket">Rencana siap pakai</h2>
+        <p class="section-lead">Tidak mau menyusun dari nol? Mulai dari salah satu rencana ini, lalu ubah sesuai kebutuhanmu.</p>
+        <div class="cards" id="package-list"></div>
+      </div>
+    </section>
+
+    <!-- Hotel -->
+    <section class="section" id="hotel" aria-labelledby="h-hotel">
+      <div class="wrap">
+        <h2 id="h-hotel">Pilihan hotel</h2>
+        <p class="section-lead">Harga dihitung per orang per malam, dengan asumsi kamar berbagi.</p>
+        <div class="tabs" role="tablist" aria-label="Kota hotel">
+          <button type="button" role="tab" id="tab-makkah" aria-selected="true" aria-controls="hotel-list" data-city="makkah">Makkah</button>
+          <button type="button" role="tab" id="tab-madinah" aria-selected="false" aria-controls="hotel-list" data-city="madinah" tabindex="-1">Madinah</button>
+        </div>
+        <div class="hotel-list" id="hotel-list" role="tabpanel" aria-labelledby="tab-makkah"></div>
+      </div>
+    </section>
+
+    <!-- Layanan -->
+    <section class="section tint" id="layanan" aria-labelledby="h-layanan">
+      <div class="wrap">
+        <h2 id="h-layanan">Layanan tambahan</h2>
+        <p class="section-lead">Ambil yang kamu perlukan saja. Sisanya bisa kamu urus sendiri.</p>
+        <ul class="service-list" id="service-list"></ul>
+      </div>
+    </section>
+
+    <!-- Testimoni (tampil jika diaktifkan di data/packages.json) -->
+    <section class="section" id="testimoni" aria-labelledby="h-testi" hidden>
+      <div class="wrap">
+        <h2 id="h-testi">Cerita jamaah</h2>
+        <div class="quotes" id="quote-list"></div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq" aria-labelledby="h-faq">
+      <div class="wrap narrow">
+        <h2 id="h-faq">Pertanyaan yang sering diajukan</h2>
+        <div class="faq" id="faq-list"></div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="contact" id="kontak" aria-labelledby="h-kontak">
+      <div class="wrap contact-grid">
+        <div>
+          <h2 id="h-kontak">Ada pertanyaan sebelum mulai?</h2>
+          <p class="lead">Ceritakan rencanamu, tim kami bantu cek hotel, tiket, dan dokumen yang diperlukan.</p>
+          <a class="btn btn-gold" data-wa-link href="#kontak" target="_blank" rel="noopener">Chat lewat WhatsApp</a>
+        </div>
+        <dl class="contact-list" id="contact-list"></dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-row">
+      <p>© <span id="year"></span> <span data-brand>Umra Mandiri</span>. Semua hak dilindungi.</p>
+      <p id="license"></p>
+    </div>
+  </footer>
+
+  <dialog id="pkg-dialog" aria-labelledby="dlg-title">
+    <div class="dlg-body" id="dlg-body"></div>
+  </dialog>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

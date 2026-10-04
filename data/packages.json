@@ -1,0 +1,369 @@
+{
+  "_catatan": "SEMUA HARGA DI FILE INI ADALAH CONTOH. Ganti dengan harga dan nama hotel dari supplier Anda sebelum website dipublikasikan.",
+  "site": {
+    "brand": "Umra Mandiri",
+    "tagline": "Atur umrah sesuai rencanamu sendiri",
+    "heroTitle": "Berangkat umrah dengan rencanamu sendiri",
+    "heroText": "Pilih lama menginap, hotel, dan layanan yang kamu butuhkan. Biayanya langsung terhitung, dan tim kami membantu mengurus sisanya lewat WhatsApp.",
+    "heroPoints": [
+      "Harga transparan per orang, per malam",
+      "Pilih hanya layanan yang kamu perlukan",
+      "Dibantu tim lewat WhatsApp dari persiapan sampai pulang"
+    ],
+    "whatsapp": "6281234567890",
+    "email": "halo@umramandiri.id",
+    "address": "Isi alamat kantor Anda di sini",
+    "serviceHours": "Setiap hari, 08.00–20.00 WIB",
+    "instagram": "",
+    "license": "",
+    "steps": [
+      {
+        "title": "Hitung rencanamu",
+        "text": "Pilih jumlah jamaah, lama menginap, hotel, dan layanan di kalkulator. Estimasi biaya langsung muncul."
+      },
+      {
+        "title": "Kirim ke WhatsApp",
+        "text": "Rencanamu terkirim ke tim kami lengkap dengan rinciannya. Kami cek ketersediaan dan konfirmasi harga final."
+      },
+      {
+        "title": "Lengkapi dokumen",
+        "text": "Kami pandu kelengkapan paspor, visa, dan dokumen lain, lalu kirim itinerary dan voucher hotel."
+      },
+      {
+        "title": "Berangkat dengan tenang",
+        "text": "Selama di Tanah Suci, tim tetap bisa dihubungi lewat WhatsApp kalau ada kendala."
+      }
+    ],
+    "defaultQuotePax": 4
+  },
+  "hotels": [
+    {
+      "id": "mk-standar",
+      "city": "makkah",
+      "name": "Makkah Standar",
+      "stars": 3,
+      "distance": "±900 m ke Masjidil Haram",
+      "facilities": [
+        "AC",
+        "Wi-Fi",
+        "Sarapan",
+        "Shuttle ke Haram"
+      ],
+      "pricePerPersonNight": 350000
+    },
+    {
+      "id": "mk-nyaman",
+      "city": "makkah",
+      "name": "Makkah Nyaman",
+      "stars": 4,
+      "distance": "±400 m ke Masjidil Haram",
+      "facilities": [
+        "AC",
+        "Wi-Fi",
+        "Sarapan",
+        "Lift",
+        "Jalan kaki ke Haram"
+      ],
+      "pricePerPersonNight": 650000
+    },
+    {
+      "id": "mk-premium",
+      "city": "makkah",
+      "name": "Makkah Premium",
+      "stars": 5,
+      "distance": "±100 m ke Masjidil Haram",
+      "facilities": [
+        "AC",
+        "Wi-Fi",
+        "Sarapan buffet",
+        "Lift",
+        "Pemandangan Haram"
+      ],
+      "pricePerPersonNight": 1400000
+    },
+    {
+      "id": "md-standar",
+      "city": "madinah",
+      "name": "Madinah Standar",
+      "stars": 3,
+      "distance": "±500 m ke Masjid Nabawi",
+      "facilities": [
+        "AC",
+        "Wi-Fi",
+        "Sarapan"
+      ],
+      "pricePerPersonNight": 300000
+    },
+    {
+      "id": "md-nyaman",
+      "city": "madinah",
+      "name": "Madinah Nyaman",
+      "stars": 4,
+      "distance": "±250 m ke Masjid Nabawi",
+      "facilities": [
+        "AC",
+        "Wi-Fi",
+        "Sarapan",
+        "Lift"
+      ],
+      "pricePerPersonNight": 550000
+    },
+    {
+      "id": "md-premium",
+      "city": "madinah",
+      "name": "Madinah Premium",
+      "stars": 5,
+      "distance": "±80 m ke Masjid Nabawi",
+      "facilities": [
+        "AC",
+        "Wi-Fi",
+        "Sarapan buffet",
+        "Lift",
+        "Pemandangan masjid"
+      ],
+      "pricePerPersonNight": 1100000
+    }
+  ],
+  "services": [
+    {
+      "id": "visa",
+      "name": "Pengurusan visa umrah",
+      "description": "Bantuan pengajuan dan pemantauan visa sampai terbit.",
+      "price": 1900000,
+      "unit": "per_person",
+      "defaultOn": true
+    },
+    {
+      "id": "tiket",
+      "name": "Tiket pesawat pulang-pergi",
+      "description": "Jakarta–Jeddah atau Madinah, kelas ekonomi. Harga tergantung musim.",
+      "price": 12500000,
+      "unit": "per_person",
+      "defaultOn": true
+    },
+    {
+      "id": "transport",
+      "name": "Transportasi lokal",
+      "description": "Jemput bandara, antar kota Makkah–Madinah, dan antar kembali.",
+      "price": 1100000,
+      "unit": "per_person",
+      "defaultOn": true
+    },
+    {
+      "id": "muthawif",
+      "name": "Muthawif pendamping",
+      "description": "Pembimbing ibadah yang mendampingi selama di Tanah Suci. Biaya per rombongan.",
+      "price": 2500000,
+      "unit": "per_group",
+      "defaultOn": false
+    },
+    {
+      "id": "asuransi",
+      "name": "Asuransi perjalanan",
+      "description": "Perlindungan kesehatan dan perjalanan selama umrah.",
+      "price": 350000,
+      "unit": "per_person",
+      "defaultOn": true
+    },
+    {
+      "id": "simcard",
+      "name": "Kartu data internasional",
+      "description": "Paket internet untuk komunikasi dan navigasi selama di Arab Saudi.",
+      "price": 150000,
+      "unit": "per_person",
+      "defaultOn": false
+    }
+  ],
+  "packages": [
+    {
+      "id": "hemat-9",
+      "name": "Mandiri Hemat",
+      "tagline": "Perjalanan 9 hari dengan hotel standar yang nyaman dan terjangkau.",
+      "days": 9,
+      "hotelMakkah": "mk-standar",
+      "nightsMakkah": 5,
+      "hotelMadinah": "md-standar",
+      "nightsMadinah": 3,
+      "services": [
+        "visa",
+        "tiket",
+        "transport",
+        "asuransi"
+      ],
+      "discountPerPerson": 0,
+      "popular": false,
+      "highlights": [
+        "Hotel bintang 3",
+        "Visa dan tiket sudah termasuk",
+        "Transport bandara dan antar kota"
+      ],
+      "itinerary": [
+        {
+          "day": "Hari 1",
+          "title": "Berangkat dari Indonesia"
+        },
+        {
+          "day": "Hari 2",
+          "title": "Tiba di Arab Saudi, menuju Madinah, check-in hotel"
+        },
+        {
+          "day": "Hari 3–4",
+          "title": "Ibadah di Masjid Nabawi dan ziarah"
+        },
+        {
+          "day": "Hari 5",
+          "title": "Perjalanan ke Makkah, ambil miqat, umrah"
+        },
+        {
+          "day": "Hari 6–8",
+          "title": "Ibadah mandiri di Masjidil Haram"
+        },
+        {
+          "day": "Hari 9",
+          "title": "Check-out dan penerbangan pulang"
+        }
+      ],
+      "notes": "Jadwal dan urutan kota bisa disesuaikan dengan jadwal penerbangan."
+    },
+    {
+      "id": "nyaman-12",
+      "name": "Mandiri Nyaman",
+      "tagline": "Waktu ibadah lebih longgar dengan hotel bintang 4 yang dekat masjid.",
+      "days": 12,
+      "hotelMakkah": "mk-nyaman",
+      "nightsMakkah": 6,
+      "hotelMadinah": "md-nyaman",
+      "nightsMadinah": 4,
+      "services": [
+        "visa",
+        "tiket",
+        "transport",
+        "asuransi",
+        "simcard"
+      ],
+      "discountPerPerson": 0,
+      "popular": true,
+      "highlights": [
+        "Hotel bintang 4 dekat masjid",
+        "12 hari dengan jadwal longgar",
+        "Kartu data internasional"
+      ],
+      "itinerary": [
+        {
+          "day": "Hari 1",
+          "title": "Berangkat dari Indonesia"
+        },
+        {
+          "day": "Hari 2",
+          "title": "Tiba di Arab Saudi, menuju Madinah"
+        },
+        {
+          "day": "Hari 3–6",
+          "title": "Ibadah di Masjid Nabawi dan ziarah kota Madinah"
+        },
+        {
+          "day": "Hari 7",
+          "title": "Perjalanan ke Makkah, ambil miqat, umrah"
+        },
+        {
+          "day": "Hari 8–11",
+          "title": "Ibadah mandiri dan ziarah di Makkah"
+        },
+        {
+          "day": "Hari 12",
+          "title": "Check-out dan penerbangan pulang"
+        }
+      ],
+      "notes": "Cocok untuk jamaah yang ingin ritme ibadah lebih santai."
+    },
+    {
+      "id": "premium-12",
+      "name": "Mandiri Premium",
+      "tagline": "Hotel bintang 5 tepat di sebelah masjid, dengan pendamping ibadah.",
+      "days": 12,
+      "hotelMakkah": "mk-premium",
+      "nightsMakkah": 6,
+      "hotelMadinah": "md-premium",
+      "nightsMadinah": 4,
+      "services": [
+        "visa",
+        "tiket",
+        "transport",
+        "muthawif",
+        "asuransi",
+        "simcard"
+      ],
+      "discountPerPerson": 0,
+      "popular": false,
+      "highlights": [
+        "Hotel bintang 5 ±100 m dari masjid",
+        "Muthawif pendamping",
+        "Cocok untuk jamaah lansia"
+      ],
+      "itinerary": [
+        {
+          "day": "Hari 1",
+          "title": "Berangkat dari Indonesia"
+        },
+        {
+          "day": "Hari 2",
+          "title": "Tiba di Arab Saudi, menuju Madinah"
+        },
+        {
+          "day": "Hari 3–6",
+          "title": "Ibadah di Masjid Nabawi, ziarah dengan muthawif"
+        },
+        {
+          "day": "Hari 7",
+          "title": "Perjalanan ke Makkah, ambil miqat, umrah dibimbing muthawif"
+        },
+        {
+          "day": "Hari 8–11",
+          "title": "Ibadah dan ziarah di Makkah"
+        },
+        {
+          "day": "Hari 12",
+          "title": "Check-out dan penerbangan pulang"
+        }
+      ],
+      "notes": "Biaya muthawif dibagi rata untuk asumsi rombongan 4 orang."
+    }
+  ],
+  "testimonials": {
+    "enabled": false,
+    "_catatan": "Aktifkan (true) hanya setelah diisi testimoni asli dari jamaah Anda. Jangan memakai testimoni rekaan.",
+    "items": [
+      {
+        "name": "Nama jamaah",
+        "city": "Kota",
+        "text": "Isi testimoni asli di sini."
+      }
+    ]
+  },
+  "faq": [
+    {
+      "q": "Apakah harga di website ini sudah final?",
+      "a": "Harga di kalkulator adalah estimasi. Harga hotel dan tiket pesawat berubah mengikuti musim dan ketersediaan, jadi harga final kami konfirmasi lewat WhatsApp sebelum kamu membayar."
+    },
+    {
+      "q": "Apa bedanya umrah mandiri dengan paket umrah biasa?",
+      "a": "Di umrah mandiri, kamu yang menentukan jadwal, hotel, dan layanan apa saja yang diambil. Kami membantu menyiapkan kebutuhan perjalanannya, tetapi tidak ada jadwal rombongan yang kaku."
+    },
+    {
+      "q": "Dokumen apa yang perlu disiapkan?",
+      "a": "Umumnya paspor dengan masa berlaku minimal 6 bulan, pas foto, dan kartu identitas. Persyaratan bisa berubah, jadi tim kami akan memberi daftar terbaru saat kamu menghubungi kami."
+    },
+    {
+      "q": "Bisa berangkat sendiri atau hanya berdua?",
+      "a": "Bisa. Kalkulator mendukung 1 sampai 10 jamaah. Untuk keberangkatan sendiri, kamar akan disesuaikan dengan ketersediaan hotel."
+    },
+    {
+      "q": "Bagaimana cara pembayarannya?",
+      "a": "Pembayaran dilakukan lewat transfer bank setelah harga final disepakati. Rincian rekening dan jadwal pembayaran dikirim oleh tim kami lewat WhatsApp."
+    },
+    {
+      "q": "Bagaimana kalau jadwal perlu diubah?",
+      "a": "Hubungi kami secepatnya. Kebijakan perubahan dan pembatalan tergantung hotel dan maskapai, dan akan kami jelaskan sebelum kamu membayar."
+    }
+  ]
+}
